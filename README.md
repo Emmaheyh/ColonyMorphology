@@ -3,8 +3,7 @@
 These MATLAB scripts are for 3D colony morphology detection and caculation. The height and max area of one colony are derived after processed by this scripts. The workfolw include loading the image (.tif) and meta file (.xlsx), detecting the outline of colony by thresholding the image gradient, caculating the height and area and analyzing them statistically.
 ## Dependency
 1. MATLAB 2019a
-2. ImageJ 
-3. The scripts in Code directory （note: add these scripts to the PATH of your MATLAB)
+2. The scripts in Code directory （note: add these scripts to the PATH of your MATLAB)
 ## Input files
 Load meta.xlsx ([meta](/example/meta.xlsx)) file. This file record the path of each image and basic parameters customized for each image.
 Configure of meta.xlsx:/example/meta.xlsx ![meta](/example/meta_example1.png)   
