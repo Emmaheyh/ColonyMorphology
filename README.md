@@ -7,7 +7,7 @@ These MATLAB scripts are for 3D colony morphology detection and caculation. The 
 3. The scripts in Code directory （note: add these scripts to the PATH of your MATLAB)
 ## Input files
 Load meta.xlsx ([meta](/example/meta.xlsx)) file. This file record the path of each image and basic parameters customized for each image.
-
+![meta](/example/meta_example1.png)
 ## Usage
 Here is an example. Open the main.m by matlab and run the pannels step by step for customizing some parameters. 
 1. load image files(two fluorescence channels): [mCherry image](/example/Test-mCherry.rar) (Test-mCherry.tif in example) and [FITC image](/example/Test-FITC.rar) (Test-FITC.tif in example).
