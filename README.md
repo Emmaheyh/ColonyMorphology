@@ -32,8 +32,11 @@ p_botx/p_boty: the x and y coordinate of ROI when identificate bottom slice usin
 ## Usage
 Here is an example. Open the ColonyInfo.m by matlab and run the pannels step by step for customizing some parameters. 
 1. Load image files(two fluorescence channels): [mCherry image](/example/Test-mCherry.rar) (Test-mCherry.tif in example) and [FITC image](/example/Test-FITC.rar) (Test-FITC.tif in example).
-2. Identify the top and bottom of each colony. Set 8 paris of region of interest (ROI) of mCherry image and FITC image. Each pair is along the center of each colony. The average flurescence of each ROI along the z stack could be derived. We determine the slice with the biggest mCherry or FITC fluorescence change is the top or bottom slice. After identifying the top and bottom slice of the colony, the height was next calculated by multiplication the number of colony images with the z-step size. The results are caculated by colonyBondary.m.  
+2. Identify the top and bottom of each colony. Set 8 paris of region of interest (ROI) of mCherry image and FITC image. Each pair is along the center of each colony. The average flurescence of each ROI along the z stack could be derived. We determine the slice with the biggest mCherry or FITC fluorescence change is the top or bottom slice. After identifying the top and bottom slice of the colony, the height was next calculated by multiplication the number of colony images with the z-step size. These are accomplished by colonyBondary.m.  
 ![ROI](/example/ROI_mCherry.png) ![ROI](/example/ROI_FITC.png)
 
-3. Identify the outline of each colony. We identified the edge of colony biofilm by denoising and thresholding the image gradient (MATLAB function, “imgaussfilt” and “imgrad”). This step also gave rise to an averaged mCherry signal from the edge of the colony at this plane. by applying this to each plane along the z-step, we will get the outline of them. Then, the area was calculated by converting the pixel number to the value of area.  
-![1](/example/algorithm_flow.png)
+3. Identify the outline of each colony. We identified the edge of colony biofilm by denoising and thresholding the image gradient (MATLAB function, “imgaussfilt” and “imgrad”). This step also gave rise to an averaged mCherry signal from the edge of the colony at this plane. by applying this to each plane along the z-step, we will get the outline of them. Then, the area was calculated by converting the pixel number to the value of area. Additionally, in our experimental setting, we have 3 replicates of each kncokout strain, so we also caculate the average height and average max area of each strain and compare them with wildtype by student t test. These are accomplished by colonySize.m.  
+![1](/example/algorithm.png)
+4. Finally, the side view of each strain are presented by PlotColony.m.  
+![glmZ_full](https://github.com/Emmaheyh/ColonyMorphology/assets/126593269/9c4a4e55-c4a0-4d59-b9d7-9b9ffadb1656)
+## 
