@@ -25,9 +25,9 @@ threshold: the threshold during image segmentation
 rectangle: the size of ROI during top and bottom slice identification  
 sigma: the standard deviation used for filtrating image with a 2-D Gaussian smoothing kernel  
 disk_size: the disk size when using close operation for image identification  
-top/bottom: the top and bottom slice of this colony
-p_topx/p_topy: the x and y coordinate of ROI when identificate top slice using mCherry image  
-p_botx/p_boty: the x and y coordinate of ROI when identificate bottom slice using FITC image  
+top/bottom: the top and bottom slice of this colony  
+p_topx/p_topy: the x and y coordinates of ROI when identificate top slice using mCherry image  
+p_botx/p_boty: the x and y coordinates of ROI when identificate bottom slice using FITC image  
 ## Usage
 Here is an example. Open the ColonyInfo.m by matlab and run the pannels step by step for customizing some parameters. 
 1. Load image files(two fluorescence channels): [mCherry image](/example/Test-mCherry.rar) (Test-mCherry.tif in example) and [FITC image](/example/Test-FITC.rar) (Test-FITC.tif in example).
