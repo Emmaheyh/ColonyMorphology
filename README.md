@@ -39,4 +39,6 @@ Here is an example. Open the ColonyInfo.m by matlab and run the pannels step by 
 ![1](/example/algorithm.png)
 4. Finally, the side view of each strain are presented by PlotColony.m.  
 ![glmZ_full](https://github.com/Emmaheyh/ColonyMorphology/assets/126593269/9c4a4e55-c4a0-4d59-b9d7-9b9ffadb1656)
-## 
+## Output
+The height, max area of each replicate and the average of them of each strain, the student t test results of knockout strains comparism with wildtype.  
+Path of file: /example/meta_results.xlsx
