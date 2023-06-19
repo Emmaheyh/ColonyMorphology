@@ -9,6 +9,6 @@ These MATLAB scripts are for 3D colony morphology detection and caculation. The 
 Load meta.xlsx ([meta](/example/meta.xlsx)) file. This file record the path of each image and basic parameters customized for each image.
 ## Usage
 Here is an example. Open the main.m by matlab and run the pannels step by step for customizing some parameters. 
-1. load image files(two fluorescence channels): [mCherry image](/example/Test-mCherry.tif) (Test-mCherry.tif in example) and [FITC image](/example/Test-FITC.tif) (Test-FITC.tif in example).
+1. load image files(two fluorescence channels): [mCherry image](example/Test-mCherry.tif) (Test-mCherry.tif in example) and [FITC image](/example/Test-FITC.tif) (Test-FITC.tif in example).
 2. set 8 paris of region of interest (ROI) of mCherry image and FITC image. Each pair is along the center of each colony. The average flurescence of each ROI along the z direction could be derived. This step is for determine the top and bottom slice of colony. We determine the slice with the biggest mCherry or FITC fluorescence change is the top or bottom slice. 
 4. 
