@@ -36,4 +36,4 @@ Here is an example. Open the ColonyInfo.m by matlab and run the pannels step by 
 ![ROI](/example/ROI_mCherry.png) ![ROI](/example/ROI_FITC.png)
 
 3. Identify the outline of each colony. We identified the edge of colony biofilm by denoising and thresholding the image gradient (MATLAB function, “imgaussfilt” and “imgrad”). This step also gave rise to an averaged mCherry signal from the edge of the colony at this plane. by applying this to each plane along the z-step, we will get the outline of them. Then, the area was calculated by converting the pixel number to the value of area.  
-![1](/example/algorithm flow.png)
+![1](/example/algorithm_flow.png)
